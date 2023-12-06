@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    margin-top: 40px;
+}
+.container h2{
+    justify-content: center;
+    text-align: center;
+    font-size: 26px;
+    color: #1a1919;
+}
+.flex-container {
+display: flex;
+align-items: center;
+flex-direction: row;
+}
+.example-container {
+    margin-top: 30px;
+    margin-left: 30px;
+margin-bottom: 40px;
+border-radius: 7px;
+color: #333;
+background-color: rgb(127, 183, 185);
+height: 250px;
+    width: 296px;
+    box-shadow:7px 5px rgb(196, 217, 235);
+}
+.example-container:hover{
+    background-color: aliceblue;
+}
+.example-container p:hover{
+    color: #1a1919;
+}
+img{
+    margin-left: 12px;
+    margin-top: 10px;
+}
+.example-container p{
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    
+}
+@media screen and (max-width:544px)  {
+    .flex-container {
+display: flex;
+flex-wrap: wrap;
+margin-left: 55px;
+}
+}
+@media screen and (min-width:635px) and (max-width:714px) {
+    .flex-container {
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+}
+.contain{
+    background-image: url('./img/bg-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 535px;
+}
+.contain h1{
+    position:relative;
+    top: 100px;
+    justify-content: center;
+    text-align: center;
+    color: #141313;
+}
+.search{
+    position: relative;
+    top: 150px;
+    justify-content: center;
+    text-align: center;
+}
+.search input,.search button{
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+}
+.search button{
+    width: 90px;
+
+}
+.contain p{
+    position: relative;
+    top: 190px;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: #161515;
+    font-weight: 600;
+}
+footer{
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(118, 178, 231);
+}
+footer p{
+    color:rgb(14, 13, 13);
+    padding: 12px;
+}
